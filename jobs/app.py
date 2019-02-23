@@ -18,7 +18,7 @@ def execute_sql(sql, values, commit=False, single=False):
     if commit = True:
         results = connection.commit()
     else:
-        results = curco.fetchone() if single elsecursor.fetchall()
+        results = cursor.fetchone() if single elsecursor.fetchall()
 
     cursor.close()
     return results
